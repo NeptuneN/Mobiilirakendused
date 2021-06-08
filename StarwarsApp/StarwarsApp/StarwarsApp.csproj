@@ -62,11 +62,19 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Activities\FilmsActivity.cs" />
+    <Compile Include="Activities\FilmsDetailActivity.cs" />
+    <Compile Include="Activities\PeopleActivity.cs" />
+    <Compile Include="Activities\PeopleDetailActivity.cs" />
+    <Compile Include="Activities\PlanetsActivity.cs" />
+    <Compile Include="Activities\PlanetsDetailActivity.cs" />
+    <Compile Include="Activities\StarshipsActivity.cs" />
+    <Compile Include="Activities\StarshipsDetailActivity.cs" />
     <Compile Include="Adapters\PlanetsAdapter.cs" />
     <Compile Include="Adapters\StarshipsAdapter.cs" />
     <Compile Include="Adapters\FilmsAdapter.cs" />
     <Compile Include="Adapters\PeopleAdapter.cs" />
-    <Compile Include="MainActivity.cs" />
+    <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Models\Films.cs" />
     <Compile Include="Models\People.cs" />
     <Compile Include="Models\Planets.cs" />
@@ -111,32 +119,52 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json">
-      <Version>12.0.3</Version>
+      <Version>13.0.1</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.3" />
     <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="28.0.0.3" />
     <PackageReference Include="Xamarin.Android.Support.CustomTabs" Version="28.0.0.3" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResourceAnalysisConfig Include="Resources\layout\people_layout.xml">
+    <AndroidResource Include="Resources\layout\people_layout.xml">
       <SubType>Designer</SubType>
-    </AndroidResourceAnalysisConfig>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResourceAnalysisConfig Include="Resources\layout\films_layout.xml">
+    <AndroidResource Include="Resources\layout\films_layout.xml">
       <SubType>Designer</SubType>
-    </AndroidResourceAnalysisConfig>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResourceAnalysisConfig Include="Resources\layout\starships_layout.xml">
+    <AndroidResource Include="Resources\layout\starships_layout.xml">
       <SubType>Designer</SubType>
-    </AndroidResourceAnalysisConfig>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResourceAnalysisConfig Include="Resources\layout\planets_layout.xml">
+    <AndroidResource Include="Resources\layout\planets_layout.xml">
       <SubType>Designer</SubType>
-    </AndroidResourceAnalysisConfig>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\films_detail_layout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\starships_detail_layout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\planets_detail_layout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\people_detail_layout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

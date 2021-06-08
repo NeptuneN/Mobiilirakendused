@@ -8,27 +8,31 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp">
-        <TextView
-                android:text="Name"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:minWidth="25px"
-                android:minHeight="25px"
-                android:id="@+id/nameTextView" />
-        <TextView
-                android:text="Population"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/populationTextView" />
-        <TextView
-                android:text="Climate"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/climateTextView" />
-
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/listViewPlanets"/>
+            <TextView
+                    android:text="Name"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:id="@+id/nameTextView" />
+            <TextView
+                    android:text="Population"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/populationTextView" />
+            <TextView
+                    android:text="Climate"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/climateTextView" />
     </LinearLayout>
-
 </LinearLayout>

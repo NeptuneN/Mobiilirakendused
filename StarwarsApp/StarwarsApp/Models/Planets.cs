@@ -14,14 +14,14 @@ namespace StarwarsApp.Models
     public class PlanetsDetails
     {
         public string name { get; set; }
-        public int rotation_period { get; set; }
-        public int orbital_period { get; set; }
-        public int diameter { get; set; }
+        public string rotation_period { get; set; }
+        public string orbital_period { get; set; }
+        public string diameter { get; set; }
         public string climate { get; set; }
         public string gravity { get; set; }
         public string terrain { get; set; }
-        public int surface_water { get; set; }
-        public int population { get; set; }
+        public string surface_water { get; set; }
+        public string population { get; set; }
         public List<string> residents { get; set; }
         public List<string> films { get; set; }
         public DateTime created { get; set; }

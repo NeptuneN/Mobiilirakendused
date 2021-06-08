@@ -11,20 +11,20 @@ using System.Text;
 
 namespace StarwarsApp.Models
 {
-    public class StarshipsDetails
+        public class StarshipsDetails
     {
         public string name { get; set; }
         public string model { get; set; }
         public string manufacturer { get; set; }
-        public int cost_in_credits { get; set; }
-        public int length { get; set; }
-        public int max_atmosphering_speed { get; set; }
+        public string cost_in_credits { get; set; }
+        public string length { get; set; }
+        public string max_atmosphering_speed { get; set; }
         public string crew { get; set; }
-        public int passengers { get; set; }
-        public int cargo_capacity { get; set; }
+        public string passengers { get; set; }
+        public string cargo_capacity { get; set; }
         public string consumables { get; set; }
         public string hyperdrive_rating { get; set; }
-        public int MGLT { get; set; }
+        public string MGLT { get; set; }
         public string starship_class { get; set; }
         public List<string> pilots { get; set; }
         public List<string> films { get; set; }
@@ -32,6 +32,7 @@ namespace StarwarsApp.Models
         public DateTime edited { get; set; }
         public string url { get; set; }
     }
+
     public class Starships
     {
         public int count { get; set; }

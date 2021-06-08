@@ -8,27 +8,31 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp">
-        <TextView
-                android:text="Title"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:minWidth="25px"
-                android:minHeight="25px"
-                android:id="@+id/titleTextView"/>
-        <TextView
-                android:text="Release Date"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/releaseDateTextView"/>
-        <TextView
-                android:text="Director"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/directorTextView"/>
-
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/listViewFilms"/>
+            <TextView
+                    android:text="Title"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:id="@+id/titleTextView"/>
+            <TextView
+                    android:text="Release Date"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/releaseDateTextView"/>
+            <TextView
+                    android:text="Director"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/directorTextView"/>
     </LinearLayout>
-
 </LinearLayout>

@@ -45,7 +45,7 @@ namespace StarwarsApp.Adapters
             {
                 view = _context.LayoutInflater.Inflate(Resource.Layout.films_layout, null);
                 view.FindViewById<TextView>(Resource.Id.titleTextView).Text = _items[position].title;
-                view.FindViewById<TextView>(Resource.Id.releaseDateTextView).Text = _items[position].release_date;
+                view.FindViewById<TextView>(Resource.Id.releaseDateTextView).Text = _items[position].release_date.ToString();
                 view.FindViewById<TextView>(Resource.Id.directorTextView).Text = _items[position].director;
             }
             return view;

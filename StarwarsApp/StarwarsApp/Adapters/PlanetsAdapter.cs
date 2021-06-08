@@ -45,7 +45,7 @@ namespace StarwarsApp.Adapters
             {
                 view = _context.LayoutInflater.Inflate(Resource.Layout.planets_layout, null);
                 view.FindViewById<TextView>(Resource.Id.nameTextView).Text = _items[position].name;
-                view.FindViewById<TextView>(Resource.Id.populationTextView).Text = _items[position].population;
+                view.FindViewById<TextView>(Resource.Id.populationTextView).Text = _items[position].population.ToString();
                 view.FindViewById<TextView>(Resource.Id.climateTextView).Text = _items[position].climate;
             }
             return view;
